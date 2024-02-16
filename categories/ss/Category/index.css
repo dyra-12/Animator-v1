@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+    background-color: black;
+   
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+/************************************ SIDE BAR *******************************************************/
+ 
+
+h2,h3{
+    color: white;
+    padding-left: 30px;
+}
+
+h2{
+    margin-top: 50px;
+}
+body{
+	background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+	background: black;
+	position: fixed;
+	top: 0;
+	left: -225px;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+	display: block;
+	width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+	color: #ffffff;
+	margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+	color: rgb(206, 240, 253);
+	font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	
+	color: white;
+	font-size: 16px;
+	position: relative;
+    font-weight: bold;
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #9658FC;
+	width: 30px;
+	display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover{
+	color: black;
+
+	background:white;
+    border-right: 2px solid #9658FC;;
+}
+
+.wrapper .sidebar ul li a:hover .icon{
+	color: black;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	
+	transition: all 0.5s ease;
+    margin-left: 0;
+	width: 100%;
+}
+
+.wrapper .section .top_navbar{
+	background: black;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+ 
+}
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+	left: 0px;
+}
+
+body.active .wrapper .section{
+	
+    width: calc(100% - 225px);
+	margin-left: 225px;
+}
+
+/************************************ SIDE BAR *******************************************************/
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+.nav-bar ul{
+    display: flex;
+    color: white;
+    margin-left: 30px;
+    background-color: transparent;
+}
+
+.nav-bar ul li{
+    margin: 0px 0px;
+padding: 20px  20px;
+font-weight: bold;
+}
+
+
+
+.nav-bar ul li:hover{
+
+    background-color: white;
+    color: black;
+    
+}
+
+.nav-bar ul li:hover a{
+    color: black;
+}
+
+.player img{
+    width: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+
+.main-page{
+   
+    margin-top: 750px;
+    padding-top: 50px;
+    margin-left: 30px;
+    
+}
+
+.main-page .main-page-title h1{
+    font-size: 6vh;
+    color: #9658FC;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+/***********************************************************************************************************/
+
+/************************************** SLIDER  ********************************************************/
+.swiper{
+    margin-left: 50px;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    
+    margin-top: 20px;
+    display: inline-flex;
+    width: 1200px;
+    
+}
+.swiper-wrapper{
+margin-left: 50px;
+}
+
+.swiper .swiper-slide{
+    width: 380px;
+    margin: 0px 5px;
+}
+
+.swiper .swiper-slide img{
+    height: 320px;
+    width: 320px;
+    border-radius: 12px;
+    display: flex;
+}
+
+
+
+.material-symbols-outlined{
+    color: white;
+    font-size: 70px;
+    position: relative;
+    display: none;
+    z-index: 1;
+    top: -190px;
+    right: -120px;
+    background-color: transparent;
+}
+
+.swiper-slide:hover .material-symbols-outlined{
+    display: flex;
+}
+
+.swiper .swiper-slide:hover img{
+    filter: blur(2px) brightness(50%);
+    -webkit-filter: blur(2px) brightness(50%);
+
+}
+
+.swiper-slide p{
+    color: white;
+    position: relative;
+    z-index: 1;
+    top: -30px;
+    padding-left: 10px;
+    font-size: large;
+    backdrop-filter: blur(8px) brightness(50%);
+    background-color: transparent;
+    
+}
+
+.swiper-slide:hover p{
+    display: none;
+}
+
+/************************************** SLIDER  ********************************************************/
+
+swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 0px;
+    left: 20px;
+}
+.player a {
+    background-color: transparent;
+  }
+
+button {
+    
+    background: #9658FC;
+    border: none;
+    border-radius: 25px;
+    margin-top: 740px;
+    margin-left: 90px;
+    cursor: pointer;
+    font-size: 1.25em;
+    letter-spacing: .1em;
+    outline: none;
+    padding: .75em 2em;
+    position: absolute;
+    text-transform: uppercase;
+  }
+
+  button::before {
+    background: #4CAF50;
+    border-radius: inherit;
+    content: '';
+    filter: blur(10px); 
+    opacity: .75;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1; 
+  }
+
+  button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+
+
+
+
+ 
+
+
+

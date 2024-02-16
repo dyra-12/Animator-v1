@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+</head>
+
+<body>
+
+    <!----------------------------SIDEBAR------------------------------------------->
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="">
+                                Home</a></li>
+                        <li><a href="">Genres</a></li>
+                        <li><a href="">Your library</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+    <!----------------------------SIDEBAR------------------------------------------->
+
+    <!--------------------------------NAV BAR ---------------------------------------->
+
+    <div class="search">
+        <h1>Search</h1>
+        <form>
+            <input type="text" name="" placeholder="     Seach you favorite anime">
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </form>
+    </div>
+
+    <!--------------------------------NAV BAR ---------------------------------------->
+
+    <div class="categories">
+        <h1>Categories</h1>
+        <ul>
+            <li>
+                <div class="box1">
+                    <a href="./action.html">
+                    <ul>
+                        <li><img src="./assets/action.jpeg" alt="" id="img0"></li>
+                        <li>
+                            
+                                <p id="p0">Action</p>
+                            
+                        </li>
+                    </ul>
+                </a> 
+            <li>
+                <div class="box1">
+                    <a href="./Isekai.html">
+                    <ul>
+                        <li><img src="./assets/isekai.png" alt="" id="img1"></li>
+                        <li>
+                            
+                            <p id="p1">Isekai</p>
+                        
+                        </li>
+                    </ul>
+                </a>
+            <li>
+                <div class="box1">
+                    <a href="./Josei.html">
+                    <ul>
+                        <li><img src="./assets/josei.jpeg" alt="" id="img2"></li>
+                        <li>
+                            
+                            <p id="p2">Josei</p>
+                        </li>
+                    </ul>
+                </a>
+            <li>
+                <div class="box1">
+                    <a href="./School.html">
+                    <ul>
+                        <li><img src="./assets/slice of life.jpeg" alt="" id="img3"></li>
+                        <li>
+                            <p id="p3">School</p>
+                        </li>
+                    </ul>
+                </a>
+            <li>
+                <div class="box1">
+                    <a href="./Mecha.html">
+                    <ul>
+                        <li><img src="./assets/mecha.jpeg" alt="" id="img4"></li>
+                        <li>
+                            
+                            <p id="p4">Mecha</p>
+                        </li>
+                    </ul>
+                </a>
+            <li>
+                <div class="box1">
+                    <a href="./Romance.html">
+                    <ul>
+                        <li><img src="./assets/romance.jpeg" alt="" id="img5"></li>
+                        <li>
+                            
+                            <p id="p5">Romance</p>
+                        </li>
+                    </ul>
+                </a>
+            <li>
+                <div class="box1">
+                    <a href="./Seinen.html">
+                    <ul>
+                        <li><img src="./assets/seinen.jpeg" alt="" id="img6"></li>
+                        <li>
+                            
+                            <p id="p6">Seinen</p>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <div class="box1">
+                    <a href="./Horror.html">
+                    <ul>
+                        <li><img src="./assets/horror.jpeg" alt="" id="img6"></li>
+                        <li>
+                            <p id="p6">Horror</p>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+
+            <li>
+                <div class="box1">
+                    <a href="./Shounen.html">
+                    <ul>
+                        <li><img src="./assets/shonen.jpeg" alt="" id="img6"></li>
+                        <li>
+                            
+                            <p id="p6">Shounen</p>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+
+
+
+        </ul>
+
+
+
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        
+        async function sendddata() {
+            var text = "Action";
+            localStorage.setItem("textvalue", text);
+        }
+        sendddata();
+
+        
+    </script>
+
+</body>
+
+</html>

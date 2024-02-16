@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="main copy.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+</head>
+
+<body>
+
+    <!----------------------------SIDEBAR------------------------------------------->
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="">
+                                Home</a></li>
+                        <li><a href="">Genres</a></li>
+                        <li><a href="">Your library</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+       
+
+    </div>
+    <!----------------------------SIDEBAR------------------------------------------->
+
+    <!--------------------------------NAV BAR ---------------------------------------->
+
+
+
+    <!--------------------------------NAV BAR ---------------------------------------->
+
+    <div class="categories">
+        <h1>Seinen</h1>
+        <ul>
+            <li>
+                <div class="box1">
+                    <ul>
+                        <li><img src="../assets/spy.jpg" alt="" id="img0"></li>
+                        <li>
+                            <p id="p0">Romance</p>
+                        </li>
+                    </ul>
+
+            <li>
+                <div class="box1">
+                    <ul>
+                        <li><img src="../assets/spy.jpg" alt="" id="img1"></li>
+                        <li>
+                            <p id="p1">Romance</p>
+                        </li>
+                    </ul>
+
+            <li>
+                <div class="box1">
+                    <ul>
+                        <li><img src="../assets/spy.jpg" alt="" id="img2"></li>
+                        <li>
+                            <p id="p2">Romance</p>
+                        </li>
+                    </ul>
+
+            <li>
+                <div class="box1">
+                    <ul>
+                        <li><img src="../assets/spy.jpg" alt="" id="img3"></li>
+                        <li>
+                            <p id="p3">Romance</p>
+                        </li>
+                    </ul>
+
+            <li>
+                <div class="box1">
+                    <ul>
+                        <li><img src="../assets/spy.jpg" alt="" id="img4"></li>
+                        <li>
+                            <p id="p4">Romance</p>
+                        </li>
+                    </ul>
+
+            <li>
+                <div class="box1">
+                    <ul>
+                        <li><img src="../assets/spy.jpg" alt="" id="img5"></li>
+                        <li>
+                            <p id="p5">Romance</p>
+                        </li>
+                    </ul>
+
+            <li>
+                <div class="box1">
+                    <ul>
+                        <li><img src="../assets/spy.jpg" alt="" id="img6"></li>
+                        <li>
+                            <p id="p6">Romance</p>
+                        </li>
+                    </ul>
+
+        </ul>
+
+
+
+    </div>
+
+    <script src="../js/script.js"></script>
+
+    <script>
+
+        var id = "Seinen";
+        const api_url = 'https://gogoanime.consumet.org/genre/' +id;
+        const topAnime = [];
+
+        async function getTopAnime() {
+            const response = await fetch(api_url);
+            const dat = await response.json();
+            /*
+                        console.log(dat)
+                        const t1 = dat[0].animeTitle;
+                        const t2 = dat[0].animeImg;
+            
+            
+                        document.getElementById("p0").textContent = t1;
+                        document.getElementById("img0").src = t2;*/
+
+            for (let i = 0; i < 7; i++) {
+
+
+                const t1 = dat[i].animeTitle;
+                const t2 = dat[i].animeImg;
+                document.getElementById("p" + i).textContent = t1;
+                document.getElementById("img" + i).src = t2;
+            }
+        }
+
+        getTopAnime();
+    </script>
+
+</body>
+
+</html>
